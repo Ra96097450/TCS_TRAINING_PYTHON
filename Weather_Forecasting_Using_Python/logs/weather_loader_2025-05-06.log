@@ -1,0 +1,4 @@
+2025-05-06 22:49:12,742 - INFO - Connected to MongoDB successfully.
+2025-05-06 22:49:12,749 - INFO - Successfully read CSV file: kolkata_past_10_days_weather.csv
+2025-05-06 22:49:12,757 - INFO - Cleared existing records from the collection.
+2025-05-06 22:49:12,758 - INFO - Inserted 10 records into MongoDB collection 'kolkata_last_10_days'.

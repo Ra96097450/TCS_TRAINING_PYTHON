@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <h1>Kolkata 10-Day Weather Forecast</h1>
+
+    <form method="get" action="/">
+        <label for="selected_date">Select a date:</label>
+        <select name="selected_date" id="selected_date" onchange="this.form.submit()">
+            <option value="">--Choose a date--</option>
+            {% for date, _ in forecast_data %}
+                <option value="{{ date }}" {% if selected_date == date %}selected{% endif %}>{{ date }}</option>
+            {% endfor %}
+        </select>
+    </form>
+
+    {% if temp_for_selected_date %}
+        <h2>Forecast for {{ selected_date }}: {{ temp_for_selected_date }} °C</h2>
+    {% endif %}
+</body>
+</html>
