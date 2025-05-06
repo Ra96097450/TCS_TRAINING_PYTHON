@@ -27,7 +27,7 @@ The final project, located inside `Weather_Forecasting_Using_Python`, uses all t
 - **Scrape historical weather data** using BeautifulSoup from timeanddate.com.
 - **Store and retrieve** weather data using MongoDB.
 - **Train a SARIMA time series model** to predict future temperatures.
-- **Display the prediction** (next day's temperature) using a Flask web app.
+- **Display the prediction** (next 10 day's temperature) using a Flask web app.
 
 ### 🔧 Technologies Used
 - Python
