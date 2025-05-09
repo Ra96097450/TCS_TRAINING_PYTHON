@@ -28,6 +28,7 @@ The final project, located inside `Weather_Forecasting_Using_Python`, uses all t
 - **Store and retrieve** weather data using MongoDB.
 - **Train a SARIMA time series model** to predict future temperatures.
 - **Display the prediction** (next 10 day's temperature) using a Flask web app.
+- **Sending mail** of weather forecasted data to a email address.
 
 ### 🔧 Technologies Used
 - Python
