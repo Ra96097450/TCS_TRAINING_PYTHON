@@ -4,7 +4,7 @@
 2025-05-06 22:31:21,710 INFO [app1:43] - Connected to MongoDB.
 2025-05-06 22:31:21,730 INFO [app1:51] - Data loaded and processed.
 2025-05-06 22:31:21,764 INFO [app1:58] - SARIMA model trained successfully.
-2025-05-06 22:31:21,771 INFO [app1:64] - Forecasted temperature for 2025-05-04: 31.0 °C
+2025-05-06 22:31:21,771 INFO [app1:64] - Forecasted temperature for 2025-05-04: 31.0 ï¿½C
 2025-05-06 22:31:21,779 INFO [_internal:97] - 127.0.0.1 - - [06/May/2025 22:31:21] "GET / HTTP/1.1" 200 -
 2025-05-06 22:31:55,185 INFO [_internal:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -16,7 +16,7 @@
 2025-05-06 22:31:58,176 INFO [app1:43] - Connected to MongoDB.
 2025-05-06 22:31:58,204 INFO [app1:51] - Data loaded and processed.
 2025-05-06 22:31:58,237 INFO [app1:58] - SARIMA model trained successfully.
-2025-05-06 22:31:58,244 INFO [app1:64] - Forecasted temperature for 2025-05-04: 31.0 °C
+2025-05-06 22:31:58,244 INFO [app1:64] - Forecasted temperature for 2025-05-04: 31.0 ï¿½C
 2025-05-06 22:31:58,251 INFO [_internal:97] - 127.0.0.1 - - [06/May/2025 22:31:58] "GET / HTTP/1.1" 200 -
 2025-05-06 22:41:07,609 INFO [_internal:97] -  * Detected change in 'c:\\Users\\RAJIB\\Weather_Forecasting_Using_Python\\load_weather_to_mongo.py', reloading
 2025-05-06 22:41:07,944 INFO [_internal:97] -  * Restarting with stat
@@ -96,7 +96,7 @@ configparser.NoSectionError: No section: 'mongodb'
 2025-05-06 23:01:57,064 INFO [app1:43] - Connected to MongoDB.
 2025-05-06 23:01:57,102 INFO [app1:51] - Data loaded and processed.
 2025-05-06 23:01:57,133 INFO [app1:58] - SARIMA model trained successfully.
-2025-05-06 23:01:57,139 INFO [app1:64] - Forecasted temperature for 2025-05-06: 27.0 °C
+2025-05-06 23:01:57,139 INFO [app1:64] - Forecasted temperature for 2025-05-06: 27.0 ï¿½C
 2025-05-06 23:01:57,146 INFO [_internal:97] - 127.0.0.1 - - [06/May/2025 23:01:57] "GET / HTTP/1.1" 200 -
 2025-05-07 00:07:40,779 INFO [_internal:97] -  * Detected change in 'c:\\Users\\RAJIB\\Weather_Forecasting_Using_Python\\app1.py', reloading
 2025-05-07 00:07:41,014 INFO [_internal:97] -  * Restarting with stat
@@ -210,3 +210,191 @@ configparser.NoSectionError: No section: 'mongodb'
 2025-05-07 00:18:58,974 INFO [_internal:97] -  * Restarting with stat
 2025-05-07 00:19:01,352 WARNING [_internal:97] -  * Debugger is active!
 2025-05-07 00:19:01,355 INFO [_internal:97] -  * Debugger PIN: 101-564-238
+2025-05-08 09:05:20,063 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-08 09:05:20,063 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 09:05:20,066 - INFO -  * Restarting with stat
+2025-05-08 09:05:22,366 - WARNING -  * Debugger is active!
+2025-05-08 09:05:22,371 - INFO -  * Debugger PIN: 781-103-501
+2025-05-08 09:05:22,608 - ERROR - Failed to load CSV: 'utf-8' codec can't decode byte 0xb0 in position 22: invalid start byte
+2025-05-08 09:05:22,611 - ERROR - Forecasting error: 'Max Temperature (ï¿½C)'
+2025-05-08 09:05:22,633 - INFO - 127.0.0.1 - - [08/May/2025 09:05:22] "GET / HTTP/1.1" 200 -
+2025-05-08 09:05:22,703 - INFO - 127.0.0.1 - - [08/May/2025 09:05:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-08 09:05:42,826 - ERROR - Failed to load CSV: 'utf-8' codec can't decode byte 0xb0 in position 22: invalid start byte
+2025-05-08 09:05:42,827 - ERROR - Forecasting error: 'Max Temperature (ï¿½C)'
+2025-05-08 09:05:42,828 - INFO - 127.0.0.1 - - [08/May/2025 09:05:42] "GET /?selected_date=&email=rsk6671@gmail.com HTTP/1.1" 200 -
+2025-05-08 09:09:05,810 - INFO -  * Detected change in 'c:\\Users\\RAJIB\\Weather_Forecasting_Using_Python\\appp.py', reloading
+2025-05-08 09:09:06,087 - INFO -  * Restarting with stat
+2025-05-08 09:09:22,075 WARNING [_internal:97] -  * Debugger is active!
+2025-05-08 09:09:22,079 INFO [_internal:97] -  * Debugger PIN: 781-103-501
+2025-05-08 09:10:34,090 INFO [_internal:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-08 09:10:34,091 INFO [_internal:97] - [33mPress CTRL+C to quit[0m
+2025-05-08 09:10:34,093 INFO [_internal:97] -  * Restarting with stat
+2025-05-08 09:10:36,394 WARNING [_internal:97] -  * Debugger is active!
+2025-05-08 09:10:36,397 INFO [_internal:97] -  * Debugger PIN: 781-103-501
+2025-05-08 09:10:43,130 INFO [appp:55] - Starting weather forecast route.
+2025-05-08 09:10:43,369 INFO [appp:64] - Connected to MongoDB.
+2025-05-08 09:10:43,467 INFO [appp:72] - Data loaded and processed.
+2025-05-08 09:10:43,606 INFO [appp:79] - SARIMA model trained successfully.
+2025-05-08 09:10:43,643 INFO [_internal:97] - 127.0.0.1 - - [08/May/2025 09:10:43] "GET /?selected_date=&email=rsk6671@gmail.com HTTP/1.1" 200 -
+2025-05-08 09:11:42,506 INFO [appp:55] - Starting weather forecast route.
+2025-05-08 09:11:42,510 INFO [appp:64] - Connected to MongoDB.
+2025-05-08 09:11:42,520 INFO [appp:72] - Data loaded and processed.
+2025-05-08 09:11:42,539 INFO [appp:79] - SARIMA model trained successfully.
+2025-05-08 09:11:45,480 ERROR [appp:50] - Failed to send email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-b1fb3b5b6d2sm10376902a12.25 - gsmtp')
+2025-05-08 09:11:45,481 INFO [_internal:97] - 127.0.0.1 - - [08/May/2025 09:11:45] "GET /?selected_date=2025-04-29&email=rajibseakh89@gmail.com HTTP/1.1" 200 -
+2025-05-08 09:12:43,904 INFO [appp:55] - Starting weather forecast route.
+2025-05-08 09:12:43,907 INFO [appp:64] - Connected to MongoDB.
+2025-05-08 09:12:43,934 INFO [appp:72] - Data loaded and processed.
+2025-05-08 09:12:43,958 INFO [appp:79] - SARIMA model trained successfully.
+2025-05-08 09:12:46,739 ERROR [appp:50] - Failed to send email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-74059020db7sm12485571b3a.105 - gsmtp')
+2025-05-08 09:12:46,739 INFO [_internal:97] - 127.0.0.1 - - [08/May/2025 09:12:46] "GET /?selected_date=2025-04-29&email=rsk6671@gmail.com HTTP/1.1" 200 -
+2025-05-08 09:13:32,497 INFO [appp:55] - Starting weather forecast route.
+2025-05-08 09:13:32,501 INFO [appp:64] - Connected to MongoDB.
+2025-05-08 09:13:32,546 INFO [appp:72] - Data loaded and processed.
+2025-05-08 09:13:32,568 INFO [appp:79] - SARIMA model trained successfully.
+2025-05-08 09:13:35,991 ERROR [appp:50] - Failed to send email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-30ad4fe2248sm1202762a91.35 - gsmtp')
+2025-05-08 09:13:35,991 INFO [_internal:97] - 127.0.0.1 - - [08/May/2025 09:13:35] "GET /?selected_date=2025-04-27&email=rsk6671@gmail.com HTTP/1.1" 200 -
+2025-05-08 09:21:15,969 INFO [appp:55] - Starting weather forecast route.
+2025-05-08 09:21:15,972 INFO [appp:64] - Connected to MongoDB.
+2025-05-08 09:21:16,018 INFO [appp:72] - Data loaded and processed.
+2025-05-08 09:21:16,042 INFO [appp:79] - SARIMA model trained successfully.
+2025-05-08 09:21:19,833 ERROR [appp:50] - Failed to send email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-22e3731325asm44131945ad.74 - gsmtp')
+2025-05-08 09:21:19,834 INFO [_internal:97] - 127.0.0.1 - - [08/May/2025 09:21:19] "GET /?selected_date=2025-05-01&email=rsk6671@gmail.com HTTP/1.1" 200 -
+2025-05-08 09:21:59,844 INFO [_internal:97] -  * Detected change in 'c:\\Users\\RAJIB\\Weather_Forecasting_Using_Python\\appp.py', reloading
+2025-05-08 09:22:00,299 INFO [_internal:97] -  * Restarting with stat
+2025-05-08 09:22:02,674 WARNING [_internal:97] -  * Debugger is active!
+2025-05-08 09:22:02,678 INFO [_internal:97] -  * Debugger PIN: 781-103-501
+2025-05-08 09:22:07,717 INFO [_internal:97] -  * Detected change in 'c:\\Users\\RAJIB\\Weather_Forecasting_Using_Python\\appp.py', reloading
+2025-05-08 09:22:07,955 INFO [_internal:97] -  * Restarting with stat
+2025-05-08 09:22:15,943 INFO [_internal:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-08 09:22:15,944 INFO [_internal:97] - [33mPress CTRL+C to quit[0m
+2025-05-08 09:22:15,945 INFO [_internal:97] -  * Restarting with stat
+2025-05-08 09:22:18,254 WARNING [_internal:97] -  * Debugger is active!
+2025-05-08 09:22:18,257 INFO [_internal:97] -  * Debugger PIN: 781-103-501
+2025-05-08 09:22:20,061 INFO [appp:55] - Starting weather forecast route.
+2025-05-08 09:22:20,073 INFO [appp:64] - Connected to MongoDB.
+2025-05-08 09:22:20,088 INFO [appp:72] - Data loaded and processed.
+2025-05-08 09:22:20,114 INFO [appp:79] - SARIMA model trained successfully.
+2025-05-08 09:22:20,127 INFO [_internal:97] - 127.0.0.1 - - [08/May/2025 09:22:20] "GET /?selected_date=2025-05-01&email=rsk6671@gmail.com HTTP/1.1" 200 -
+2025-05-08 09:22:29,748 INFO [appp:55] - Starting weather forecast route.
+2025-05-08 09:22:29,751 INFO [appp:64] - Connected to MongoDB.
+2025-05-08 09:22:29,785 INFO [appp:72] - Data loaded and processed.
+2025-05-08 09:22:29,804 INFO [appp:79] - SARIMA model trained successfully.
+2025-05-08 09:22:33,595 ERROR [appp:50] - Failed to send email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-74059020dc8sm12198382b3a.86 - gsmtp')
+2025-05-08 09:22:33,596 INFO [_internal:97] - 127.0.0.1 - - [08/May/2025 09:22:33] "GET /?selected_date=2025-05-15&email=rsk6671@gmail.com HTTP/1.1" 200 -
+2025-05-08 09:30:45,796 INFO [_internal:97] -  * Detected change in 'c:\\Users\\RAJIB\\Weather_Forecasting_Using_Python\\appp.py', reloading
+2025-05-08 09:30:46,453 INFO [_internal:97] -  * Restarting with stat
+2025-05-08 09:30:48,825 WARNING [_internal:97] -  * Debugger is active!
+2025-05-08 09:30:48,828 INFO [_internal:97] -  * Debugger PIN: 781-103-501
+2025-05-08 09:30:55,252 INFO [_internal:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-08 09:30:55,252 INFO [_internal:97] - [33mPress CTRL+C to quit[0m
+2025-05-08 09:30:55,254 INFO [_internal:97] -  * Restarting with stat
+2025-05-08 09:30:57,593 WARNING [_internal:97] -  * Debugger is active!
+2025-05-08 09:30:57,598 INFO [_internal:97] -  * Debugger PIN: 781-103-501
+2025-05-08 09:30:58,797 INFO [appp:55] - Starting weather forecast route.
+2025-05-08 09:30:58,808 INFO [appp:64] - Connected to MongoDB.
+2025-05-08 09:30:58,839 INFO [appp:72] - Data loaded and processed.
+2025-05-08 09:30:58,866 INFO [appp:79] - SARIMA model trained successfully.
+2025-05-08 09:31:04,024 INFO [appp:47] - Forecast email sent to rsk6671@gmail.com
+2025-05-08 09:31:04,032 INFO [_internal:97] - 127.0.0.1 - - [08/May/2025 09:31:04] "GET /?selected_date=2025-05-15&email=rsk6671@gmail.com HTTP/1.1" 200 -
+2025-05-08 09:31:40,273 INFO [appp:55] - Starting weather forecast route.
+2025-05-08 09:31:40,276 INFO [appp:64] - Connected to MongoDB.
+2025-05-08 09:31:40,322 INFO [appp:72] - Data loaded and processed.
+2025-05-08 09:31:40,346 INFO [appp:79] - SARIMA model trained successfully.
+2025-05-08 09:31:44,834 INFO [appp:47] - Forecast email sent to seakhrajib02@gmail.com
+2025-05-08 09:31:44,836 INFO [_internal:97] - 127.0.0.1 - - [08/May/2025 09:31:44] "GET /?selected_date=2025-05-10&email=seakhrajib02@gmail.com HTTP/1.1" 200 -
+2025-05-08 09:37:10,287 INFO [appp:55] - Starting weather forecast route.
+2025-05-08 09:37:10,290 INFO [appp:64] - Connected to MongoDB.
+2025-05-08 09:37:10,320 INFO [appp:72] - Data loaded and processed.
+2025-05-08 09:37:10,338 INFO [appp:79] - SARIMA model trained successfully.
+2025-05-08 09:37:14,332 INFO [appp:47] - Forecast email sent to seakhrajib02@gmail.com
+2025-05-08 09:37:14,333 INFO [_internal:97] - 127.0.0.1 - - [08/May/2025 09:37:14] "GET /?selected_date=2025-05-09&email=seakhrajib02@gmail.com HTTP/1.1" 200 -
+2025-05-08 09:38:26,828 INFO [_internal:97] -  * Detected change in 'c:\\Users\\RAJIB\\Weather_Forecasting_Using_Python\\appp.py', reloading
+2025-05-08 09:38:27,067 INFO [_internal:97] -  * Restarting with stat
+2025-05-08 09:38:29,443 WARNING [_internal:97] -  * Debugger is active!
+2025-05-08 09:38:29,447 INFO [_internal:97] -  * Debugger PIN: 781-103-501
+2025-05-08 09:48:46,160 INFO [_internal:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-08 09:48:46,161 INFO [_internal:97] - [33mPress CTRL+C to quit[0m
+2025-05-08 09:48:46,162 INFO [_internal:97] -  * Restarting with stat
+2025-05-08 09:48:48,458 WARNING [_internal:97] -  * Debugger is active!
+2025-05-08 09:48:48,461 INFO [_internal:97] -  * Debugger PIN: 781-103-501
+2025-05-08 09:49:01,208 INFO [appp:57] - Starting weather forecast route 2025-05-08 09:49:01.208220
+2025-05-08 09:49:01,218 INFO [appp:66] - Connected to MongoDB.
+2025-05-08 09:49:01,247 INFO [appp:74] - Data loaded and processed.
+2025-05-08 09:49:01,272 INFO [appp:81] - SARIMA model trained successfully.
+2025-05-08 09:49:05,040 INFO [appp:48] - Forecast email sent to seakhrajib02@gmail.com
+2025-05-08 09:49:05,040 INFO [appp:114] - App ended at:2025-05-08 09:49:05.040629
+2025-05-08 09:49:05,040 INFO [appp:115] - Total time taken by the App:0:00:03.832409
+2025-05-08 09:49:05,048 INFO [_internal:97] - 127.0.0.1 - - [08/May/2025 09:49:05] "GET /?selected_date=2025-05-09&email=seakhrajib02@gmail.com HTTP/1.1" 200 -
+2025-05-08 09:49:11,114 INFO [appp:57] - Starting weather forecast route 2025-05-08 09:49:11.114035
+2025-05-08 09:49:11,117 INFO [appp:66] - Connected to MongoDB.
+2025-05-08 09:49:11,127 INFO [appp:74] - Data loaded and processed.
+2025-05-08 09:49:11,145 INFO [appp:81] - SARIMA model trained successfully.
+2025-05-08 09:49:14,887 INFO [appp:48] - Forecast email sent to rsk6671@gmail.com
+2025-05-08 09:49:14,887 INFO [appp:114] - App ended at:2025-05-08 09:49:14.887474
+2025-05-08 09:49:14,887 INFO [appp:115] - Total time taken by the App:0:00:03.773439
+2025-05-08 09:49:14,889 INFO [_internal:97] - 127.0.0.1 - - [08/May/2025 09:49:14] "GET /?selected_date=2025-05-09&email=rsk6671@gmail.com HTTP/1.1" 200 -
+2025-05-09 10:48:58,685 INFO [_internal:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-09 10:48:58,686 INFO [_internal:97] - [33mPress CTRL+C to quit[0m
+2025-05-09 10:48:58,689 INFO [_internal:97] -  * Restarting with stat
+2025-05-09 10:49:02,376 WARNING [_internal:97] -  * Debugger is active!
+2025-05-09 10:49:02,385 INFO [_internal:97] -  * Debugger PIN: 135-961-449
+2025-05-09 10:49:02,408 INFO [app:57] - Starting weather forecast route 2025-05-09 10:49:02.408635
+2025-05-09 10:49:02,687 INFO [app:66] - Connected to MongoDB.
+2025-05-09 10:49:02,749 INFO [app:74] - Data loaded and processed.
+2025-05-09 10:49:02,861 INFO [app:81] - SARIMA model trained successfully.
+2025-05-09 10:49:02,867 INFO [app:114] - App ended at:2025-05-09 10:49:02.867140
+2025-05-09 10:49:02,867 INFO [app:115] - Total time taken by the App:0:00:00.458505
+2025-05-09 10:49:02,896 INFO [_internal:97] - 127.0.0.1 - - [09/May/2025 10:49:02] "GET / HTTP/1.1" 200 -
+2025-05-09 10:49:03,000 INFO [_internal:97] - 127.0.0.1 - - [09/May/2025 10:49:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-09 10:49:12,715 INFO [app:57] - Starting weather forecast route 2025-05-09 10:49:12.715269
+2025-05-09 10:49:12,720 INFO [app:66] - Connected to MongoDB.
+2025-05-09 10:49:12,749 INFO [app:74] - Data loaded and processed.
+2025-05-09 10:49:12,774 INFO [app:81] - SARIMA model trained successfully.
+2025-05-09 10:49:30,068 INFO [app:48] - Forecast email sent to seakhrajib02@gmail.com
+2025-05-09 10:49:30,068 INFO [app:114] - App ended at:2025-05-09 10:49:30.068748
+2025-05-09 10:49:30,068 INFO [app:115] - Total time taken by the App:0:00:17.353479
+2025-05-09 10:49:30,070 INFO [_internal:97] - 127.0.0.1 - - [09/May/2025 10:49:30] "GET /?selected_date=2025-05-10&email=seakhrajib02@gmail.com HTTP/1.1" 200 -
+2025-05-09 10:51:46,462 INFO [_internal:97] -  * Detected change in 'c:\\Users\\RAJIB\\Weather_Forecasting_Using_Python\\Data.py', reloading
+2025-05-09 10:51:46,743 INFO [_internal:97] -  * Restarting with stat
+2025-05-09 10:51:49,887 WARNING [_internal:97] -  * Debugger is active!
+2025-05-09 10:51:49,891 INFO [_internal:97] -  * Debugger PIN: 135-961-449
+2025-05-09 10:51:54,944 INFO [_internal:97] -  * Detected change in 'c:\\Users\\RAJIB\\Weather_Forecasting_Using_Python\\load_weather_to_mongo.py', reloading
+2025-05-09 10:51:55,253 INFO [_internal:97] -  * Restarting with stat
+2025-05-09 10:51:58,359 WARNING [_internal:97] -  * Debugger is active!
+2025-05-09 10:51:58,362 INFO [_internal:97] -  * Debugger PIN: 135-961-449
+2025-05-09 10:52:39,630 INFO [_internal:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-09 10:52:39,630 INFO [_internal:97] - [33mPress CTRL+C to quit[0m
+2025-05-09 10:52:39,632 INFO [_internal:97] -  * Restarting with stat
+2025-05-09 10:52:42,689 WARNING [_internal:97] -  * Debugger is active!
+2025-05-09 10:52:42,693 INFO [_internal:97] -  * Debugger PIN: 135-961-449
+2025-05-09 10:52:42,711 INFO [app:57] - Starting weather forecast route 2025-05-09 10:52:42.711465
+2025-05-09 10:52:42,726 INFO [app:66] - Connected to MongoDB.
+2025-05-09 10:52:42,766 INFO [app:74] - Data loaded and processed.
+2025-05-09 10:52:42,803 INFO [app:81] - SARIMA model trained successfully.
+2025-05-09 10:52:48,272 INFO [app:57] - Starting weather forecast route 2025-05-09 10:52:48.272026
+2025-05-09 10:52:48,285 INFO [app:66] - Connected to MongoDB.
+2025-05-09 10:52:48,305 INFO [app:74] - Data loaded and processed.
+2025-05-09 10:52:48,352 INFO [app:81] - SARIMA model trained successfully.
+2025-05-09 10:52:48,358 INFO [app:114] - App ended at:2025-05-09 10:52:48.358263
+2025-05-09 10:52:48,358 INFO [app:115] - Total time taken by the App:0:00:00.086237
+2025-05-09 10:52:48,372 INFO [_internal:97] - 127.0.0.1 - - [09/May/2025 10:52:48] "GET / HTTP/1.1" 200 -
+2025-05-09 10:52:55,238 INFO [app:48] - Forecast email sent to seakhrajib02@gmail.com
+2025-05-09 10:52:55,239 INFO [app:114] - App ended at:2025-05-09 10:52:55.239190
+2025-05-09 10:52:55,239 INFO [app:115] - Total time taken by the App:0:00:12.527725
+2025-05-09 10:52:55,240 INFO [_internal:97] - 127.0.0.1 - - [09/May/2025 10:52:55] "GET /?selected_date=2025-05-10&email=seakhrajib02@gmail.com HTTP/1.1" 200 -
+2025-05-09 10:53:21,995 INFO [app:57] - Starting weather forecast route 2025-05-09 10:53:21.995574
+2025-05-09 10:53:22,004 INFO [app:66] - Connected to MongoDB.
+2025-05-09 10:53:22,017 INFO [app:74] - Data loaded and processed.
+2025-05-09 10:53:22,043 INFO [app:81] - SARIMA model trained successfully.
+2025-05-09 10:53:25,488 INFO [app:48] - Forecast email sent to seakhrajib02@gmail.com
+2025-05-09 10:53:25,489 INFO [app:114] - App ended at:2025-05-09 10:53:25.489010
+2025-05-09 10:53:25,489 INFO [app:115] - Total time taken by the App:0:00:03.493436
+2025-05-09 10:53:25,490 INFO [_internal:97] - 127.0.0.1 - - [09/May/2025 10:53:25] "GET /?selected_date=2025-05-06&email=seakhrajib02@gmail.com HTTP/1.1" 200 -

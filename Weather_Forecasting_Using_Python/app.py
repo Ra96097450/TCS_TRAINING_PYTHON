@@ -1,12 +1,14 @@
-
 import os
 import logging
 import pandas as pd
-from flask import Flask, render_template,request
+from flask import Flask, render_template, request
 from pymongo import MongoClient
 from statsmodels.tsa.statespace.sarimax import SARIMAX
 from configparser import ConfigParser
-from datetime import timedelta
+from datetime import timedelta, datetime
+import smtplib
+from email.message import EmailMessage
+
 
 # Load configuration
 config = ConfigParser()
@@ -29,9 +31,30 @@ logging.basicConfig(
 
 app = Flask(__name__)
 
+def send_email(recipient_email, subject, body):
+    sender_email = config.get('email', 'sender_email')
+    sender_password = config.get('email', 'sender_password') #app password
+
+    msg = EmailMessage()
+    msg.set_content(body)
+    msg['Subject'] = subject
+    msg['From'] = sender_email
+    msg['To'] = recipient_email
+
+    try:
+        with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+            smtp.login(sender_email, sender_password)
+            smtp.send_message(msg)
+        logging.info(f"Forecast email sent to {recipient_email}")
+        return True
+    except Exception as e:
+        logging.error(f"Failed to send email: {e}")
+        return False
+
 @app.route('/')
 def index():
-    logging.info("Starting weather forecast route.")
+    start_time = datetime.now()
+    logging.info(f"Starting weather forecast route {start_time}")
     try:
         # MongoDB connection
         uri = config.get('mongodb', 'uri')
@@ -62,37 +85,44 @@ def index():
         predicted_temps = forecast.predicted_mean.round(2)
 
         # Dates list
-        start_date = ts.index[0] + timedelta(days=1)
+        start_date = ts.index[0]+ timedelta(days=1)
         date_list = [(start_date + timedelta(days=i)).strftime('%Y-%m-%d') for i in range(10)]
-
-        logging.info("Next 10 days weather forecasting completed!")
-
-        # Pair date and predicted temperature
         forecast_data = list(zip(date_list, predicted_temps))
 
-        # Get selected date from user input
+        # Handle user input
         selected_date = request.args.get('selected_date')
+        recipient_email = request.args.get('email')
         temp_for_selected_date = None
+        message = None
+
         if selected_date:
             for date, temp in forecast_data:
                 if date == selected_date:
                     temp_for_selected_date = temp
                     break
 
-        return render_template("index.html", forecast_data=forecast_data, selected_date=selected_date,
-                               temp_for_selected_date=temp_for_selected_date)
-        
+            # If email provided, send forecast
+            if recipient_email and temp_for_selected_date is not None:
+                subject = f"Weather Forecast for {selected_date}"
+                body = f"The predicted temperature for Kolkata on {selected_date} is {temp_for_selected_date}°C."
+                success = send_email(recipient_email, subject, body)
+                message = "Email sent successfully!" if success else "Failed to send email."
 
+        end_time = datetime.now()
+        total_time = end_time - start_time
 
+        logging.info(f"App ended at:{end_time}")
+        logging.info(f"Total time taken by the App:{total_time}")
 
-    except ValueError as ve:
-        logging.error(f"ValueError: {ve}")
-    except ConnectionError as ce:
-        logging.error(f"ConnectionError: {ce}")
+        return render_template("index.html",
+                               forecast_data=forecast_data,
+                               selected_date=selected_date,
+                               temp_for_selected_date=temp_for_selected_date,
+                               message=message)
+
     except Exception as e:
         logging.exception(f"Unhandled error: {e}")
-
-    return "An error occurred during processing."
+        return "An error occurred during processing."
 
 if __name__ == '__main__':
     app.run(debug=True)
